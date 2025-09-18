@@ -1,31 +1,27 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import Check from "./src/components/Check";
+import { Text, StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function index() {
   return (
-    <View style={styles.container}>
-      <Check />
-      <Text style={styles.title}>Hello React Native!</Text>
-      <Text style={styles.subtitle}>StyleSheet is working!</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.title}>
+        App is working!
+      </Text>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "white",
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'white',
   },
   title: {
     fontSize: 24,
-    fontWeight: "bold",
-    color: "#2563eb",
-  },
-  subtitle: {
-    color: "#6b7280",
-    marginTop: 16,
+    fontWeight: 'bold',
+    color: '#eab308',
   },
 });
